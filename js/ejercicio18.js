@@ -1,7 +1,6 @@
-function cambiarTexto(elementoParrafo,texto){
+const cambiarTexto = (elementoParrafo, texto) => {
     elementoParrafo.textContent = texto;
-
-}
+  };
 
 const boton= document.getElementById("boton");
 const parrafo= document.getElementById("parrafo");
@@ -11,6 +10,6 @@ let flag = true;
 
 boton.addEventListener('click',() => {
     const texto = flag?parrafoNuevo:parrafOriginal;
-    cambiarTexto(parrafo,texto);
+    cambiarTexto(parrafo, texto);
     flag = !flag;
 });
